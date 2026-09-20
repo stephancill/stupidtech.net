@@ -1,88 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stupid Technology</title>
-  <meta property="og:title" content="Stupid Technology">
-  <meta property="og:description" content="Stupid Technology is a suite of applications each focused on best-in-class proficiency at satisfying simple aims">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://stupidtech.net">
-  <meta property="og:site_name" content="Stupid Technology">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-</head>
-<body>
-  <h1>Stupid Technology</h1>
-  
-  <p>Stupid Technology is a suite of applications each focused on best-in-class proficiency at satisfying simple aims.</p>
-  
-  <table border="1">
-    <thead>
-      <tr>
-        <th>Aim</th>
-        <th>Product</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Reliably use web-based Ethereum applications on iOS without switching apps.</td>
-        <td><a target="_blank" href="https://testflight.apple.com/join/9Q4h8DZD">stupid wallet</a>: An Ethereum wallet for iOS/macOS with a Safari extension. <a target="_blank" href="https://t.me/+PXdqIUjIrApmOWY0">(feedback)</a></td>
-      </tr>
-      <tr>
-        <td>Debug web apps on iOS.</td>
-        <td><a target="_blank" href="https://apps.apple.com/us/app/devtools/id6756204921">devtools</a>: An iOS app with a Safari extension that can be invoked on any page like Chrome DevTools.</td>
-      </tr>
-      <tr>
-        <td>A fast and reliable public EVM RPC.</td>
-        <td><a target="_blank" href="https://evm.stupidtech.net">evm.stupidtech.net</a>: A production RPC proxy that races public providers.</td>
-      </tr>
-      <tr>
-        <td>Never look up a block explorer URL for a chain again.</td>
-        <td><a target="_blank" href="https://explorers.stupidtech.net">stupid explorers</a>: Routes requests to a random EIP-3091-compliant block explorer for any chain, keyed by chain ID.</td>
-      </tr>
-      <tr>
-        <td>Fast and reliable IPFS gateway.</td>
-        <td><a target="_blank" href="https://ipfs.stupidtech.net">ipfs.stupidtech.net</a>: A production IPFS proxy that races public providers.</td>
-      </tr>
-      <tr>
-        <td>One-command file uploads.</td>
-        <td><a target="_blank" href="https://upload.stupidtech.net">stupid-upload</a>: An agent-friendly interface for free temporary uploads and paid long-term uploads. <a target="_blank" href="https://github.com/stephancill/stupid-upload/tree/main/skills/stupid-upload">(agent skill)</a></td>
-      </tr>
-      <tr>
-        <td>Share transactions as URLs.</td>
-        <td><a target="_blank" href="https://txlink.stupidtech.net">txlink</a>: An app that encodes wallet requests as URL params and lets any wallet connect to complete them.</td>
-      </tr>
-      <tr>
-        <td>Fast search with duckduckgo-style bangs.</td>
-        <td><a target="_blank" href="https://search.stupidtech.net">stupid search</a>: A lightweight bang-compatible search redirector.</td>
-      </tr>
-      <tr>
-        <td>Give an agent access to a shared calendar so it can manage events for you.</td>
-        <td><a target="_blank" href="https://agent-cal.stupidtech.net">agent-cal</a>: A calendar API for AI-agent-managed Apple Calendar subscriptions.</td>
-      </tr>
-      <tr>
-        <td>Extract signal from apps designed to waste your time.</td>
-        <td><a target="_blank" href="https://apps.apple.com/us/app/stupid-social/id6764539627">stupid social</a>: A social app aggregator that shows notifications and limited, high signal content. <a target="_blank" href="https://t.me/+ROCCmb5mA4M3N2M0">(feedback)</a></td>
-      </tr>
-      <tr>
-        <td>Effortlessly create custom widgets on iOS.</td>
-        <td><a target="_blank" href="https://apps.apple.com/us/app/stupid-widgets/id6801876765">stupid widgets</a>: An app for AI-assisted widget creation, backwards compatible with Scriptable.</td>
-      </tr>
-      <tr>
-        <td>TOTP generator that stays out of your way.</td>
-        <td><a target="_blank" href="https://apps.apple.com/app/stupid-totp/id6794993633">stupid totp</a>: A TOTP app that sorts codes by last use and hides codes you don't use by default.</td>
-      </tr>
-      <tr>
-        <td>Build and run iOS apps from anywhere.</td>
-        <td><a target="_blank" href="https://github.com/stephancill/stupid-app-cli">stupid-app-cli</a>: A CLI for creating, building, signing, and distributing iOS apps.</td>
-      </tr>
-    </tbody>
-  </table>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>stupid technology</title>
+    <meta name="description" content="Stupid Technology is a suite of applications each focused on best-in-class proficiency at simple use cases." />
+    <meta property="og:title" content="stupid technology" />
+    <meta property="og:description" content="Stupid Technology is a suite of applications each focused on best-in-class proficiency at simple use cases." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://stupidtech.net" />
+    <meta property="og:image" content="https://stupidtech.net/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        max-width: 46rem;
+        margin: 2rem auto;
+        padding: 0 1rem;
+        line-height: 1.6;
+      }
+      code,
+      pre {
+        background: #f4f4f4;
+        padding: 0.15rem 0.35rem;
+        border-radius: 4px;
+      }
+      pre {
+        padding: 1rem;
+        overflow: auto;
+      }
+      form {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      input,
+      button {
+        font: inherit;
+      }
+      button {
+        padding: 0.25rem 0.75rem;
+      }
+      canvas {
+        display: block;
+        margin-top: 0.5rem;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th,
+      td {
+        text-align: left;
+        vertical-align: top;
+        border: 1px solid #ddd;
+        padding: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Stupid Technology</h1>
 
-  <p>For inquiries, contact <a target="_blank" href="mailto:hi@stupidtech.net">hi@stupidtech.net</a>.</p>
+    <p>Stupid Technology is a suite of applications each focused on best-in-class proficiency at simple use cases.</p>
 
-</body>
+    <table>
+      <thead>
+        <tr>
+          <th>Use case</th>
+          <th>Product</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Reliably use web-based Ethereum applications on iOS without switching apps.</td>
+          <td><a target="_blank" href="https://testflight.apple.com/join/9Q4h8DZD">stupid wallet</a>: An Ethereum wallet for iOS/macOS with a Safari extension. <a target="_blank" href="https://t.me/+PXdqIUjIrApmOWY0">(feedback)</a></td>
+        </tr>
+        <tr>
+          <td>Debug web apps on iOS.</td>
+          <td><a target="_blank" href="https://apps.apple.com/us/app/devtools/id6756204921">devtools</a>: An iOS app with a Safari extension that can be invoked on any page like Chrome DevTools.</td>
+        </tr>
+        <tr>
+          <td>A fast and reliable public EVM RPC.</td>
+          <td><a target="_blank" href="https://evm.stupidtech.net">evm.stupidtech.net</a>: A production RPC proxy that races public providers.</td>
+        </tr>
+        <tr>
+          <td>Never look up a block explorer URL for a chain again.</td>
+          <td><a target="_blank" href="https://explorers.stupidtech.net">stupid explorers</a>: Routes requests to a random EIP-3091-compliant block explorer for any chain, keyed by chain ID.</td>
+        </tr>
+        <tr>
+          <td>Fast and reliable IPFS gateway.</td>
+          <td><a target="_blank" href="https://ipfs.stupidtech.net">ipfs.stupidtech.net</a>: A production IPFS proxy that races public providers.</td>
+        </tr>
+        <tr>
+          <td>One-command file uploads.</td>
+          <td><a target="_blank" href="https://upload.stupidtech.net">stupid-upload</a>: An agent-friendly interface for free temporary uploads and paid long-term uploads. <a target="_blank" href="https://github.com/stephancill/stupid-upload/tree/main/skills/stupid-upload">(agent skill)</a></td>
+        </tr>
+        <tr>
+          <td>Share transactions as URLs.</td>
+          <td><a target="_blank" href="https://txlink.stupidtech.net">txlink</a>: An app that encodes wallet requests as URL params and lets any wallet connect to complete them.</td>
+        </tr>
+        <tr>
+          <td>Fast search with duckduckgo-style bangs.</td>
+          <td><a target="_blank" href="https://search.stupidtech.net">stupid search</a>: A lightweight bang-compatible search redirector.</td>
+        </tr>
+        <tr>
+          <td>Give an agent access to a shared calendar so it can manage events for you.</td>
+          <td><a target="_blank" href="https://agent-cal.stupidtech.net">agent-cal</a>: A calendar API for AI-agent-managed Apple Calendar subscriptions.</td>
+        </tr>
+        <tr>
+          <td>Extract signal from apps designed to waste your time.</td>
+          <td><a target="_blank" href="https://apps.apple.com/us/app/stupid-social/id6764539627">stupid social</a>: A social app aggregator that shows notifications and limited, high signal content. <a target="_blank" href="https://t.me/+ROCCmb5mA4M3N2M0">(feedback)</a></td>
+        </tr>
+        <tr>
+          <td>Effortlessly create custom widgets on iOS.</td>
+          <td><a target="_blank" href="https://apps.apple.com/us/app/stupid-widgets/id6801876765">stupid widgets</a>: An app for AI-assisted widget creation, backwards compatible with Scriptable.</td>
+        </tr>
+        <tr>
+          <td>TOTP generator that stays out of your way.</td>
+          <td><a target="_blank" href="https://apps.apple.com/app/stupid-totp/id6794993633">stupid totp</a>: A TOTP app that sorts codes by last use and hides codes you don't use by default.</td>
+        </tr>
+        <tr>
+          <td>Build and run iOS apps from anywhere.</td>
+          <td><a target="_blank" href="https://github.com/stephancill/stupid-app-cli">stupid-app-cli</a>: A CLI for creating, building, signing, and distributing iOS apps.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>For inquiries, contact <a target="_blank" href="mailto:hi@stupidtech.net">hi@stupidtech.net</a>.</p>
+
+    <p>
+      <a href="https://github.com/stephancill/stupidtech.net">github</a>
+      -
+      <a href="https://x.com/stephancill">twitter</a>
+    </p>
+  </body>
 </html>
